@@ -10,7 +10,7 @@ function input_skills(){
     const dl = document.createElement('dl');
     dl.classList.add('skills-list');
 
-    skills.forEach(ìtem => {
+    skills.forEach(item => {
         const dt = document.createElement('dt');
         dt.textContent = item.name;
         dt.classList.add(item.css_class);
@@ -23,7 +23,7 @@ function input_skills(){
         dl.append(dt);
         dl.append(dd);
     });
-    document.getElementsById('skills').append(dl);
+    document.getElementById('skills').append(dl);
 }
 
 input_skills();
