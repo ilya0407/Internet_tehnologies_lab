@@ -1,0 +1,27 @@
+[
+    {
+        "name" : "Java", 
+        "level" : 60, 
+        "css_class": "skill-java"
+    },
+    {
+        "name" : "SQL", 
+        "level" : 60, 
+        "css_class": "skill-sql"
+    },
+    {
+        "name" : "HTML", 
+        "level" : 60, 
+        "css_class": "skill-html"
+    },
+    {
+        "name" : "C++", 
+        "level" : 60, 
+        "css_class": "skill-cpp"
+    },
+    {
+        "name" : "CSS", 
+        "level" : 60, 
+        "css_class": "skill-css"
+    }
+]

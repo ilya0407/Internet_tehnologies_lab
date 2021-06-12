@@ -1,12 +1,4 @@
-const skills = [
-    {name : "Java", level : 60, css_class: "skill-java"},
-    {name : "SQL", level : 60, css_class: "skill-sql"},
-    {name : "HTML", level : 60, css_class: "skill-html"},
-    {name : "CSS", level : 60, css_class: "skill-css"},
-    {name : "C++", level : 60, css_class: "skill-cpp"},
-];
-
-function input_skills(){
+function input_skills(skills){
     const dl = document.createElement('dl');
     dl.classList.add('skills-list');
 
@@ -26,5 +18,10 @@ function input_skills(){
     document.getElementById('skills').append(dl);
 }
 
-input_skills();
+fetch('db/skills.json')
+  .then(data => data.json())
+  .then(skills => { 
+  	input_skills(skills); 
+  })
+  .catch(() => console.error("упс, что-то пошло не так"));
 
