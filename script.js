@@ -6,16 +6,19 @@ function input_skills(skills){
         const dt = document.createElement('dt');
         dt.textContent = item.name;
         dt.classList.add(item.css_class);
+        
         const dd = document.createElement('dd');
         dd.classList.add('level');
+        
         const div = document.createElement('div');
         div.style.width = item.level + '%';
         div.textContent = item.level;
         dd.appendChild(div);
+        
         dl.append(dt);
         dl.append(dd);
     });
-    document.getElementById('skills').append(dl);
+    document.querySelector('.skills').append(dl);
 }
 
 fetch('db/skills.json')
