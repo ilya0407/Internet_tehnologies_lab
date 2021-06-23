@@ -13,7 +13,7 @@ function input_skills(skills){
         const div = document.createElement('div');
         div.style.width = item.level + '%';
         div.textContent = item.level;
-        dd.appendChild(div);
+        dd.append(div);
         
         dl.append(dt);
         dl.append(dd);
