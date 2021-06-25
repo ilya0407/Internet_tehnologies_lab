@@ -18,7 +18,7 @@ function input_skills(skills){
         dl.append(dt);
         dl.append(dd);
     });
-    document.querySelector('.skills').append(dl);
+    document.querySelector('#skills').append(dl);
 }
 
 fetch('db/skills.json')
